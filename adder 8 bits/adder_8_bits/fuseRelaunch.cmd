@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench_isim_par.exe" -prj "C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench_par.prj" "work.adder8_bench" 

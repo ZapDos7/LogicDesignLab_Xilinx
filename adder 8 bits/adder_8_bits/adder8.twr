@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml adder8.twx adder8.ncd -o adder8.twr adder8.pcf
+
+Design file:              adder8.ncd
+Physical constraint file: adder8.pcf
+Device,package,speed:     xc3s50,pq208,-5 (PRODUCTION 1.39 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Cout           |   12.416|
+A<0>           |Sum<0>         |    7.128|
+A<0>           |Sum<1>         |    8.241|
+A<0>           |Sum<2>         |    8.302|
+A<0>           |Sum<3>         |    9.678|
+A<0>           |Sum<4>         |    9.459|
+A<0>           |Sum<5>         |   10.657|
+A<0>           |Sum<6>         |   11.465|
+A<0>           |Sum<7>         |   11.633|
+A<1>           |Cout           |   11.374|
+A<1>           |Sum<1>         |    7.028|
+A<1>           |Sum<2>         |    7.260|
+A<1>           |Sum<3>         |    8.636|
+A<1>           |Sum<4>         |    8.417|
+A<1>           |Sum<5>         |    9.615|
+A<1>           |Sum<6>         |   10.423|
+A<1>           |Sum<7>         |   10.591|
+A<2>           |Cout           |   10.309|
+A<2>           |Sum<2>         |    6.681|
+A<2>           |Sum<3>         |    7.571|
+A<2>           |Sum<4>         |    7.352|
+A<2>           |Sum<5>         |    8.550|
+A<2>           |Sum<6>         |    9.358|
+A<2>           |Sum<7>         |    9.526|
+A<3>           |Cout           |    9.967|
+A<3>           |Sum<3>         |    7.163|
+A<3>           |Sum<4>         |    7.010|
+A<3>           |Sum<5>         |    8.208|
+A<3>           |Sum<6>         |    9.016|
+A<3>           |Sum<7>         |    9.184|
+A<4>           |Cout           |    8.886|
+A<4>           |Sum<4>         |    7.114|
+A<4>           |Sum<5>         |    7.127|
+A<4>           |Sum<6>         |    7.935|
+A<4>           |Sum<7>         |    8.103|
+A<5>           |Cout           |    8.158|
+A<5>           |Sum<5>         |    6.338|
+A<5>           |Sum<6>         |    7.207|
+A<5>           |Sum<7>         |    7.375|
+A<6>           |Cout           |    7.943|
+A<6>           |Sum<6>         |    6.916|
+A<6>           |Sum<7>         |    7.160|
+A<7>           |Cout           |    7.502|
+A<7>           |Sum<7>         |    6.683|
+B<0>           |Cout           |   12.219|
+B<0>           |Sum<0>         |    6.931|
+B<0>           |Sum<1>         |    8.044|
+B<0>           |Sum<2>         |    8.105|
+B<0>           |Sum<3>         |    9.481|
+B<0>           |Sum<4>         |    9.262|
+B<0>           |Sum<5>         |   10.460|
+B<0>           |Sum<6>         |   11.268|
+B<0>           |Sum<7>         |   11.436|
+B<1>           |Cout           |   11.975|
+B<1>           |Sum<1>         |    7.331|
+B<1>           |Sum<2>         |    7.861|
+B<1>           |Sum<3>         |    9.237|
+B<1>           |Sum<4>         |    9.018|
+B<1>           |Sum<5>         |   10.216|
+B<1>           |Sum<6>         |   11.024|
+B<1>           |Sum<7>         |   11.192|
+B<2>           |Cout           |   10.677|
+B<2>           |Sum<2>         |    7.260|
+B<2>           |Sum<3>         |    7.939|
+B<2>           |Sum<4>         |    7.720|
+B<2>           |Sum<5>         |    8.918|
+B<2>           |Sum<6>         |    9.726|
+B<2>           |Sum<7>         |    9.894|
+B<3>           |Cout           |   10.669|
+B<3>           |Sum<3>         |    7.944|
+B<3>           |Sum<4>         |    7.712|
+B<3>           |Sum<5>         |    8.910|
+B<3>           |Sum<6>         |    9.718|
+B<3>           |Sum<7>         |    9.886|
+B<4>           |Cout           |    8.722|
+B<4>           |Sum<4>         |    6.345|
+B<4>           |Sum<5>         |    6.963|
+B<4>           |Sum<6>         |    7.771|
+B<4>           |Sum<7>         |    7.939|
+B<5>           |Cout           |    8.690|
+B<5>           |Sum<5>         |    6.865|
+B<5>           |Sum<6>         |    7.739|
+B<5>           |Sum<7>         |    7.907|
+B<6>           |Cout           |    8.292|
+B<6>           |Sum<6>         |    7.005|
+B<6>           |Sum<7>         |    7.509|
+B<7>           |Cout           |    7.671|
+B<7>           |Sum<7>         |    6.784|
+Cin            |Cout           |   12.411|
+Cin            |Sum<0>         |    7.123|
+Cin            |Sum<1>         |    8.236|
+Cin            |Sum<2>         |    8.297|
+Cin            |Sum<3>         |    9.673|
+Cin            |Sum<4>         |    9.454|
+Cin            |Sum<5>         |   10.652|
+Cin            |Sum<6>         |   11.460|
+Cin            |Sum<7>         |   11.628|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 31 20:30:14 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 97 MB
+
+
+

@@ -1,0 +1,3 @@
+vhdl work "adder.vhd"
+vhdl work "adder8.vhd"
+vhdl work "adder8_bench.vhd"

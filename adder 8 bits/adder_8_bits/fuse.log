@@ -1,0 +1,32 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench_isim_par.exe -prj C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench_par.prj work.adder8_bench 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/netgen/par/adder8_timesim.vhd" into library work
+Parsing VHDL file "C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 122232 KB
+Fuse CPU Usage: 935 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity adder8 [adder8_default]
+Compiling architecture behavior of entity adder8_bench
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 126 VHDL Units
+Built simulation executable C:/Users/Ioanna/Desktop/adder 8 bits/adder_8_bits/adder8_bench_isim_par.exe
+Fuse Memory Usage: 150652 KB
+Fuse CPU Usage: 1746 ms

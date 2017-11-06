@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.3
+//  \   \         Application : sch2hdl
+//  /   /         Filename : project01.vf
+// /___/   /\     Timestamp : 10/29/2014 18:08:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/TEMP.DITLABS.001/Desktop/gtech/project01.vf -w C:/Users/TEMP.DITLABS.001/Desktop/gtech/project01/project01.sch
+//Design Name: project01
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module project01(A, 
+                 B, 
+                 C, 
+                 F);
+
+    input A;
+    input B;
+    input C;
+   output F;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(XLXN_1), 
+                .I1(A), 
+                .O(XLXN_2));
+   AND2  XLXI_2 (.I0(C), 
+                .I1(B), 
+                .O(XLXN_4));
+   OR2  XLXI_3 (.I0(XLXN_4), 
+               .I1(XLXN_2), 
+               .O(F));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_1));
+endmodule

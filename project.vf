@@ -1,0 +1,82 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.3
+//  \   \         Application : sch2hdl
+//  /   /         Filename : project.vf
+// /___/   /\     Timestamp : 10/29/2014 18:11:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/TEMP.DITLABS.001/Desktop/gtech/project.vf -w C:/Users/TEMP.DITLABS.001/Desktop/gtech/project01/project.sch
+//Design Name: project
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module project01_MUSER_project(A, 
+                               B, 
+                               C, 
+                               F);
+
+    input A;
+    input B;
+    input C;
+   output F;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(XLXN_1), 
+                .I1(A), 
+                .O(XLXN_2));
+   AND2  XLXI_2 (.I0(C), 
+                .I1(B), 
+                .O(XLXN_4));
+   OR2  XLXI_3 (.I0(XLXN_4), 
+               .I1(XLXN_2), 
+               .O(F));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_1));
+endmodule
+`timescale 1ns / 1ps
+
+module project(A4, 
+               A23, 
+               B2, 
+               B3, 
+               C2, 
+               C3, 
+               F2);
+
+    input A4;
+    input A23;
+    input B2;
+    input B3;
+    input C2;
+    input C3;
+   output F2;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   
+   project01_MUSER_project  XLXI_8 (.A(A23), 
+                                   .B(B2), 
+                                   .C(C2), 
+                                   .F(XLXN_5));
+   project01_MUSER_project  XLXI_9 (.A(A23), 
+                                   .B(B3), 
+                                   .C(C3), 
+                                   .F(XLXN_6));
+   project01_MUSER_project  XLXI_10 (.A(A4), 
+                                    .B(XLXN_5), 
+                                    .C(XLXN_6), 
+                                    .F(F2));
+endmodule
